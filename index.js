@@ -29,6 +29,13 @@ io.sockets.on('connection', function(socket){
       updateUsernames();
     }
     
+  }); 
+    
+  // disconnect
+  socket.on('disconnect', function(data){
+    if(!socket.username) return;
+    usernames.splice(usernames.indexOf(socket.username, 1));
+    updateUsernames();
   });
 
 });
