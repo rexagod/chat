@@ -30,7 +30,13 @@ io.sockets.on('connection', function(socket){
     }
     
   }); 
+  
+  // send message
+  socket.on('send message', function(data){
+    io.sockets.emit('new message', {msg: data, user: socket.username});
     
+  });
+   
   // disconnect
   socket.on('disconnect', function(data){
     if(!socket.username) return;
