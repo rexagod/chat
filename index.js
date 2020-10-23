@@ -28,13 +28,17 @@ io.sockets.on('connection', function(socket){
       usernames.push(socket.username);
       updateUsernames();
     }
-    
   }); 
+  
+  // multiple users
+  function updateUsernames(){
+   	// update usernames
+	io.sockets.emit('usernames', usernames);
+  }
   
   // send message
   socket.on('send message', function(data){
     io.sockets.emit('new message', {msg: data, user: socket.username});
-    
   });
    
   // disconnect
@@ -43,5 +47,4 @@ io.sockets.on('connection', function(socket){
     usernames.splice(usernames.indexOf(socket.username, 1));
     updateUsernames();
   });
-
 });
