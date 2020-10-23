@@ -6,9 +6,11 @@
 - Batch: F8
 ***
 
-#### View the Trello Board [here](https://trello.com/b/wYaq1TD9).
+### Application Demo
 
 ![demo](/assets/demo.png)
+
+#### View the Trello Board [here](https://trello.com/b/wYaq1TD9).
 
 Highlights:
 - Uses Node.js, Express.js, and Socket.io.
