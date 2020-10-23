@@ -1,0 +1,31 @@
+{
+  "name": "chat",
+  "version": "0.1.0",
+  "description": "Node.js application for DevOps Task 1 assignment.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rexagod/chat.git"
+  },
+  "keywords": [
+    "nodejs",
+    "socketio",
+    "chat",
+    "message",
+    "minimal"
+  ],
+  "author": "Pranshu Srivastava",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/rexagod/chat/issues"
+  },
+  "homepage": "https://github.com/rexagod/chat#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socketio": "^1.0.0"
+  }
+}
